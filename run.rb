@@ -2,9 +2,8 @@ require 'bundler'
 Bundler.setup
 
 require 'twitter'
-require 'tweetbox_zero'
-
 $: << 'lib'
+require 'tweetbox_zero'
 
 Twitter.configure do |config|
   config.consumer_key       = ''
