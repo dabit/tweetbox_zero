@@ -1,5 +1,7 @@
 # TweetboxZero
 
+[![Build Status](https://travis-ci.org/dabit/tweetbox_zero.png?branch=master)](https://travis-ci.org/dabit/tweetbox_zero)
+
 Personal script to delete all my Twitter DM's
 
 ## Usage
