@@ -1,3 +1,5 @@
+$: << 'lib'
+
 require 'bundler'
 
 Bundler.setup
@@ -5,10 +7,6 @@ Bundler.setup
 require 'tweetbox_zero'
 require 'minitest/autorun'
 require 'rr'
-
-class MiniTest::Unit::TestCase
-  include RR::Adapters::TestUnit
-end
 
 class TestTweetboxZero < MiniTest::Unit::TestCase
   def test_destroy_everything
