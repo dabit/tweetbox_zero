@@ -17,7 +17,7 @@ Edit run.rb and fill the following info:
 
 You can get the keys at [http://dev.twitter.com/apps/new](http://dev.twitter.com/apps/new)
 
-Now, bundle, run it. Be happy. (Takes a while, depending on your DMs)
+Now, bundle, run it. Be happy.
 
     bundle
     ruby run.rb
