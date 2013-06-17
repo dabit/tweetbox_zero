@@ -13,6 +13,13 @@ Twitter.configure do |config|
   config.oauth_token_secret = ''
 end
 
-TweetboxZero.destroy_message_batch { Twitter.direct_messages }
-TweetboxZero.destroy_message_batch { Twitter.direct_messages_sent }
+puts "Direct Messages Received"
+while (messages = Twitter.direct_messages(:count => 200)).size > 0
+  TweetboxZero.destroy_message_batch(messages)
+end
+
+puts "Direct Messages Sent"
+while (messages = Twitter.direct_messages_sent(:count => 200)).size > 0
+  TweetboxZero.destroy_message_batch(messages)
+end
 
